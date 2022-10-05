@@ -1,13 +1,13 @@
 import React from "react";
-import Section1 from "./Section1"
+import "./assets/custom.css"
+import Section1 from "./Section1";
+
 //import { Routes, Route } from "react-router-dom";
-
-
-function App() {
-  /*
+ /*
   <Routes>
         <Route exact path="/" element={<Home />} />
       </Routes>*/
+function App() {
   return (
     <div>
       <Section1 />
