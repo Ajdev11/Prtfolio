@@ -1,6 +1,5 @@
-import React from "react";
+import { React, useEffect } from "react";
 import { gsap } from "gsap";
-import { useEffect } from "react";
 import Aj from "../src/assets/Images/Aj.jpg";
 
 function Section1() {
@@ -30,23 +29,21 @@ function Section1() {
         </div>
       </div>
       <div className="MainPage">
-        <div className="header">
-          <div className="myName">
-            <p>Olaseni Moses</p>
+        <navBar>
+          <div>
+            <p className="myName">Olaseni Moses</p>
           </div>
-          <div className="menu">
-            <p>Menu</p>
+          <div>
+            <p className="menu">Menu</p>
           </div>
-        </div>
-        <div>
-          <p className="support">
-            I DEVELOP FRONTEND DESIGNS <br /> AS A FREELANCER
-            <br /> FOR AGENCIES.
-          </p>
-          <h1 className="developer">
-            CREATIVE <br /> FRONTEND <br /> DEVELOPER...
-          </h1>
-        </div>
+        </navBar>
+        <p className="support">
+          I DEVELOP FRONTEND DESIGNS <br /> AS A FREELANCER
+          <br /> FOR AGENCIES.
+        </p>
+        <h1 className="developer">
+          CREATIVE <br /> FRONTEND <br /> DEVELOPER...
+        </h1>
         <div className="imageBorder">
           <img id="img1" src={Aj} alt="Olaseni Moses" />
         </div>
@@ -70,6 +67,69 @@ function Section1() {
             experience.
           </p>
         </div>
+        <div className="ProjectSection">
+          <div className="flex-project">
+            <p className="sn2">02/</p>
+            <p className="recent">
+              RECENT <br /> PROJECTS{" "}
+            </p>
+          </div>
+          <h1 className="Project1">
+            MY
+            <span className="Projects-line1"></span>
+            PORTFOLIO
+            <span className="Projects-line2"></span>
+          </h1>
+          <p className="projects-desc">
+            MY PERSONAL WEB <br /> PORTFOLIO
+          </p>
+          <div className="rounded-circle">
+            <p className="See-More">
+              See <br /> more
+            </p>
+          </div>
+          <h1 className="Project1">
+            MY
+            <span className="Projects-line1"></span>
+            PORTFOLIO
+            <span className="Projects-line2"></span>
+          </h1>
+          <p className="projects-desc">
+            MY PERSONAL WEB <br /> PORTFOLIO
+          </p>
+          <div className="rounded-circle">
+            <p className="See-More">
+              See <br /> more
+            </p>
+          </div>
+          <div className="flex-project" id="About-3">
+            <p className="sn2">03/</p>
+            <p className="recent">ABOUT ME</p>
+          </div>
+          <div className="hobbies">
+            <h1>TENNIS,</h1> <br />
+            <h1>CHESS,</h1> <br />
+            <br />
+            <h1>MUSIC,</h1> <br />
+            <br />
+            <br />
+            <h1>FOOTBALL.</h1>
+          </div>
+          <div className="hobbies-desc">
+            <p>
+              When not coding,i so much enjoy playing tennis and chess,However
+              i'm an Arsenal fan and i love listening to soothing music.
+            </p>
+          </div>
+        </div>
+        <footer>
+          <p>Olaseni Moses.O.</p>
+          <p>FrontEnd Dev.</p>
+          <br />
+          <div>
+            <p>Twitter, Github</p>
+          </div>
+        </footer>
       </div>
     </div>
   );

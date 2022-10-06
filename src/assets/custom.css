@@ -31,16 +31,17 @@
     color: black;
     font-family: "Poppins", sans-serif;
     padding: 20px;
+    position: relative;
   }
-  .header {
+  navBar {
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
   }
   .myName,
   .menu {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
+    position: relative;
     padding-top: 10px;
     font-size: 26px;
     font-weight: bolder;
@@ -48,9 +49,9 @@
   }
   .support {
     margin-top: 100px;
-    font-size: 21px;
+    font-size: 22px;
     font-weight: 500;
-
+    line-height: 1.5rem;
   }
   .developer {
     margin-top: 50px;
@@ -85,9 +86,75 @@
     font-weight: 500;
     line-height: 2rem;
   }
-    .About2{
-      margin-top: 50px;
-     font-size: 21px;
-     width: 100%;
-    }
+  .About2 {
+    margin-top: 50px;
+    font-size: 21px;
+    width: 100%;
+  }
+  .ProjectSection,
+  #About-3 {
+    margin-top: 150px;
+  }
+  .flex-project {
+    display: flex;
+  }
+  .recent,
+  .projects-desc {
+    margin: 0 auto;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 2rem;
+  }
+  .sn2 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .Project1 {
+    display: grid;
+    margin-top: 150px;
+    font-weight: 550;
+    font-size: 45px;
+    line-height: 2.2rem;
+  }
+  .Projects-line1,
+  .Projects-line2 {
+    margin-top: 3px;
+    width: 60px;
+    height: 3px;
+    border: 1px solid black;
+    background-color: black;
+  }
+  .Projects-line2 {
+    width: 250px;
+  }
+  .projects-desc {
+    margin-top: 50px;
+  }
+  .rounded-circle {
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    background-color: #fff;
+    margin-top: 180px;
+  }
+  .See-More {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 45px 45px;
+  }
+  .hobbies {
+    display: grid;
+    justify-content: right;
+    margin-top: 100px;
+  }
+  .hobbies-desc p {
+    margin-top: 50px;
+    font-size: 21px;
+  }
+  footer {
+    margin-top: 100px;
+    font-size: 26px;
+    font-weight: bolder;
+  }
 }
