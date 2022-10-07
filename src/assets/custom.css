@@ -157,4 +157,11 @@
     font-size: 26px;
     font-weight: bolder;
   }
+  .socials{
+    display: flex;
+  }
+  .footer-links{
+    text-decoration: none;
+    color: black;
+  }
 }

@@ -1,8 +1,9 @@
-import { React, useEffect } from "react";
+import { React, useEffect} from "react";
 import { gsap } from "gsap";
 import Aj from "../src/assets/Images/Aj.jpg";
+import { Link } from "react-router-dom";
 
-function Section1() {
+function Home() {
   useEffect(() => {
     const tl = gsap.timeline({ defaults: { duration: 1.5, opacity: 0 } });
     tl.to("#zero", { y: -150 });
@@ -126,8 +127,9 @@ function Section1() {
           <p>Olaseni Moses.O.</p>
           <p>FrontEnd Dev.</p>
           <br />
-          <div>
-            <p>Twitter, Github</p>
+          <div className="socials">
+            <Link className="footer-links" to="/">Twitter,</Link>
+            <Link className="footer-links" to="/">Github</Link>
           </div>
         </footer>
       </div>
@@ -135,4 +137,4 @@ function Section1() {
   );
 }
 
-export default Section1;
+export default Home;
