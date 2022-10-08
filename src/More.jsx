@@ -1,11 +1,7 @@
-import React from 'react'
+import { React, useEffect } from "react";
 
 function More() {
-  return (
-    <div>
-        
-    </div>
-  )
+  return <></>;
 }
 
-export default More
+export default More;

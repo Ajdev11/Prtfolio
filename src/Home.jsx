@@ -1,4 +1,4 @@
-import { React, useEffect} from "react";
+import { React, useEffect } from "react";
 import { gsap } from "gsap";
 import Aj from "../src/assets/Images/Aj.jpg";
 import { Link } from "react-router-dom";
@@ -128,8 +128,12 @@ function Home() {
           <p>FrontEnd Dev.</p>
           <br />
           <div className="socials">
-            <Link className="footer-links" to="/">Twitter,</Link>
-            <Link className="footer-links" to="/">Github</Link>
+            <Link className="footer-links" to="/">
+              Twitter,
+            </Link>
+            <Link className="footer-links" to="/">
+              Github
+            </Link>
           </div>
         </footer>
       </div>
