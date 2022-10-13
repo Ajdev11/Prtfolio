@@ -4,7 +4,6 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Aj from "../src/assets/Images/Aj.jpg";
 
-
 function Home() {
   gsap.registerPlugin(ScrollTrigger);
   /* useEffect(() => {
@@ -150,11 +149,11 @@ function Home() {
       </div>
       <div className="MainPage">
         <navBar>
-          <div>
-            <p className="myName">Olaseni Moses</p>
-          </div>
-          <div>
-            <p className="menu">Menu</p>
+          <div className="menuBar">
+            <p className="myName">OLASENI</p>
+            <Link className="menu" to="/">
+              MENU
+            </Link>
           </div>
         </navBar>
         <p className="support">
@@ -207,11 +206,10 @@ function Home() {
               MY PERSONAL WEB <br /> PORTFOLIO
             </p>
           </div>
-
           <div className="rounded-circle">
-            <p className="See-More">
+            <Link className="See-More" to="/">
               See <br /> more
-            </p>
+            </Link>
           </div>
           <h1 className="Project1">
             MY
@@ -223,9 +221,9 @@ function Home() {
             MY PERSONAL WEB <br /> PORTFOLIO
           </p>
           <div className="rounded-circle">
-            <p className="See-More">
+            <Link className="See-More" to="/">
               See <br /> more
-            </p>
+            </Link>
           </div>
           <div className="flex-project" id="About-3">
             <p className="sn2">03/</p>
