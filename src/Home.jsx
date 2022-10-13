@@ -1,12 +1,12 @@
-import { React, useEffect, useRef } from "react";
+import { React, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Aj from "../src/assets/Images/Aj.jpg";
-import { Link } from "react-router-dom";
+
 
 function Home() {
   gsap.registerPlugin(ScrollTrigger);
-  const circleRef = useRef(null);
   /* useEffect(() => {
     const tl = gsap.timeline({ defaults: { duration: 1.5, opacity: 0 } });
     tl.to("#zero", { y: -150 });
