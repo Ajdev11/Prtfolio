@@ -3,9 +3,6 @@
   padding: 0;
 }
 @media (min-device-width: 320px) and (max-device-width: 768px) {
-  /* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
-  @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');*/
-
   .Intro {
     background: black;
     height: 100%;
@@ -35,7 +32,7 @@
     padding: 20px;
     position: relative;
   }
-  .menuBar{
+  .menuBar {
     display: flex;
     justify-content: space-between;
     position: sticky;
@@ -43,13 +40,12 @@
   }
   .myName,
   .menu {
-    position: relative;
     padding-top: 40px;
     font-size: 26px;
     font-weight: normal;
     opacity: 0.85;
   }
-  .menu{
+  .menu {
     text-decoration: none;
     color: black;
   }

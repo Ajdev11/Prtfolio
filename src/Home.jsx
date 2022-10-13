@@ -6,7 +6,7 @@ import Aj from "../src/assets/Images/Aj.jpg";
 
 function Home() {
   gsap.registerPlugin(ScrollTrigger);
-  /* useEffect(() => {
+ /* useEffect(() => {
     const tl = gsap.timeline({ defaults: { duration: 1.5, opacity: 0 } });
     tl.to("#zero", { y: -150 });
     tl.to("#fifty", { y: -300 });
@@ -14,8 +14,8 @@ function Home() {
     tl.to(".Intro", { duration: 2, y: -700, opacity: 1 });
     tl.from(".MainPage", { opacity: 0, duration: 0.01, y: 500 });
     tl.to(".MainPage", { opacity: 1, duration: 2, y: -670 });
-  }, []);*/
-
+  }, []);
+*/
   //scrolltrigger for support
   useEffect(() => {
     const gs = gsap.timeline();
