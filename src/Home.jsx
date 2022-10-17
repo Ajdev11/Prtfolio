@@ -6,20 +6,19 @@ import Aj from "../src/assets/Images/Aj.jpg";
 
 function Home() {
   gsap.registerPlugin(ScrollTrigger);
- /* useEffect(() => {
+  useEffect(() => {
     const tl = gsap.timeline({ defaults: { duration: 1.5, opacity: 0 } });
     tl.to("#zero", { y: -150 });
     tl.to("#fifty", { y: -300 });
     tl.to("#hundred", { y: -480 });
-    tl.to(".Intro", { duration: 2, y: -700, opacity: 1 });
-    tl.from(".MainPage", { opacity: 0, duration: 0.01, y: 500 });
-    tl.to(".MainPage", { opacity: 1, duration: 2, y: -670 });
+    tl.to(".Intro", { duration: 1, y: -700, opacity: 1 });
+    tl.from(".MainPage", { opacity: 0, duration: 0.001, y: -500 });
+    tl.to(".MainPage", { opacity: 1, duration: 1, y: -670 });
   }, []);
-*/
   //scrolltrigger for support
   useEffect(() => {
     const gs = gsap.timeline();
-    gs.to(".support", { y: 200, opacity: 0 });
+    gs.to(".support", { y: -20, opacity: 0 });
     gs.to(".support", {
       y: 20,
       opacity: 1,
@@ -28,7 +27,7 @@ function Home() {
       scrollTrigger: {
         trigger: ".support",
         start: "top center",
-        end: "bottom top",
+        end: "bottom center",
         scrub: true,
       },
     });
@@ -37,12 +36,12 @@ function Home() {
     gs.to(".Dev", {
       y: 50,
       opacity: 1,
-      duration: 5,
+      duration: 3,
       stagger: 0.8,
       scrollTrigger: {
         trigger: ".Dev",
         start: "top center",
-        end: "bottom top",
+        end: "bottom center",
         scrub: true,
       },
     });
@@ -50,13 +49,13 @@ function Home() {
     gs.to(".About", { y: -50, opacity: 0 });
     gs.to(".About", {
       y: 50,
-      opacity: 2,
+      opacity: 1,
       duration: 3,
       stagger: 0.8,
       scrollTrigger: {
         trigger: ".About",
         start: "top center",
-        end: "bottom top",
+        end: "bottom center",
         scrub: true,
       },
     });
@@ -70,7 +69,7 @@ function Home() {
       scrollTrigger: {
         trigger: ".About2",
         start: "top center",
-        end: "bottom top",
+        end: "bottom center",
         scrub: true,
       },
     });
@@ -84,7 +83,7 @@ function Home() {
       scrollTrigger: {
         trigger: ".Project-one",
         start: "top center",
-        end: "bottom top",
+        end: "bottom center",
         scrub: true,
       },
     });
@@ -98,7 +97,7 @@ function Home() {
       scrollTrigger: {
         trigger: ".rounded-circle",
         start: "top center",
-        end: "bottom top",
+        end: "bottom center",
         scrub: true,
       },
     });
@@ -112,7 +111,7 @@ function Home() {
       scrollTrigger: {
         trigger: ".hobbies",
         start: "top center",
-        end: "bottom top",
+        end: "bottom center",
         scrub: true,
       },
     });
@@ -126,7 +125,7 @@ function Home() {
       scrollTrigger: {
         trigger: ".hobbies-desc",
         start: "top center",
-        end: "bottom top",
+        end: "bottom center",
         scrub: true,
       },
     });
@@ -142,7 +141,8 @@ function Home() {
         </div>
         <div>
           <h1 className="Counts">
-            <span id="hundred">100</span> <span id="fifty">50</span>{" "}
+            <span id="hundred">100</span>
+             <span id="fifty">50</span>
             <span id="zero">0</span>
           </h1>
         </div>
@@ -162,13 +162,13 @@ function Home() {
         </p>
         <div className="Dev">
           <h1 className="developer">
-            CREATIVE <br /> FRONTEND <br /> DEVELOPER...
+            CREATIVE <br /> FRONTEND <br /> DEVELOPER..
           </h1>
           <div className="imageBorder">
             <img id="img1" src={Aj} alt="Olaseni Moses" />
           </div>
           <div>
-            <h1 className="developer">
+            <h1 className="developer" id="dev2">
               MOSES <br /> OLASENI.O.{" "}
             </h1>
           </div>
