@@ -8,9 +8,9 @@ function Home() {
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
     const tl = gsap.timeline({ defaults: { duration: 1.5, opacity: 0 } });
-    tl.to("#zero", { y: -150 });
-    tl.to("#fifty", { y: -300 });
-    tl.to("#hundred", { y: -480 });
+    tl.to("#zero", { y: -100 });
+    tl.to("#fifty", { y: -250 });
+    tl.to("#hundred", { y: -450 });
     tl.to(".Intro", { duration: 1, y: -700, opacity: 1 });
     tl.from(".MainPage", { opacity: 0, duration: 0.001, y: -500 });
     tl.to(".MainPage", { opacity: 1, duration: 1, y: -670 });
@@ -26,20 +26,6 @@ function Home() {
       stagger: 0.8,
       scrollTrigger: {
         trigger: ".support",
-        start: "top center",
-        end: "bottom center",
-        scrub: true,
-      },
-    });
-    //scroll for Dev
-    gs.to(".Dev", { y: -50, opacity: 0 });
-    gs.to(".Dev", {
-      y: 50,
-      opacity: 1,
-      duration: 3,
-      stagger: 0.8,
-      scrollTrigger: {
-        trigger: ".Dev",
         start: "top center",
         end: "bottom center",
         scrub: true,
@@ -73,57 +59,15 @@ function Home() {
         scrub: true,
       },
     });
-    //Scroll for Project-one
-    gs.to(".Project-one", { y: -50, opacity: 0 });
-    gs.to(".Project-one", {
-      y: 50,
-      opacity: 2,
-      duration: 3,
-      stagger: 0.8,
-      scrollTrigger: {
-        trigger: ".Project-one",
-        start: "top center",
-        end: "bottom center",
-        scrub: true,
-      },
-    });
     //Scroll for See more images
-    gs.to(".rounded-circle", { y: -50, opacity: 0 });
+    gs.from(".rounded-circle", { y: -100, opacity: 0 });
     gs.to(".rounded-circle", {
       y: 50,
-      opacity: 2,
+      opacity: 1,
       duration: 3,
-      stagger: 0.8,
+      stagger: 1,
       scrollTrigger: {
         trigger: ".rounded-circle",
-        start: "top center",
-        end: "bottom center",
-        scrub: true,
-      },
-    });
-    //Scroll for hobbies
-    gs.to(".hobbies", { y: -50, opacity: 0 });
-    gs.to(".hobbies", {
-      y: 50,
-      opacity: 2,
-      duration: 3,
-      stagger: 0.8,
-      scrollTrigger: {
-        trigger: ".hobbies",
-        start: "top center",
-        end: "bottom center",
-        scrub: true,
-      },
-    });
-    //Scroll for hobbies-desc
-    gs.to(".hobbies-desc", { y: -50, opacity: 0 });
-    gs.to(".hobbies-desc", {
-      y: 50,
-      opacity: 2,
-      duration: 3,
-      stagger: 0.8,
-      scrollTrigger: {
-        trigger: ".hobbies-desc",
         start: "top center",
         end: "bottom center",
         scrub: true,
@@ -132,7 +76,7 @@ function Home() {
   }, []);
 
   return (
-    <div>
+    <div className="App">
       <div className="Intro">
         <div className="name">
           OLASENI <br />
@@ -142,7 +86,7 @@ function Home() {
         <div>
           <h1 className="Counts">
             <span id="hundred">100</span>
-             <span id="fifty">50</span>
+            <span id="fifty">50</span>
             <span id="zero">0</span>
           </h1>
         </div>
@@ -176,8 +120,7 @@ function Home() {
         <p className="sn">01/</p>
         <p className="About">
           EXTENSIVELY CURIOUS ABOUT <br /> WEB STACKS TECHNOLOGIES. <br /> I
-          LOVE WORKING WITH REACT, <br /> GSAP, JAVASCRIPT, CUSTOM <br />{" "}
-          CSS/TAILWINDCSS/SASS TO
+          LOVE WORKING WITH REACT,VUE JS,GSAP, JAVASCRIPT,BOOTSTRAP TO
           <br /> CREATE USER-FRIENDLY INTERFACES. <br /> I LOVE TO GIVE USERS A
           FUN <br /> AND MEMORABLE WEB EXPERIENCES.{" "}
         </p>
@@ -197,46 +140,52 @@ function Home() {
           </div>
           <div className="Project-one">
             <h1 className="Project1">
-              MY
+              RBK
               <span className="Projects-line1"></span>
-              PORTFOLIO
+              Contest App
               <span className="Projects-line2"></span>
             </h1>
             <p className="projects-desc">
-              MY PERSONAL WEB <br /> PORTFOLIO
+              Raibow Book <br /> Challenge App
             </p>
           </div>
-          <div className="rounded-circle">
-            <Link className="See-More" to="/">
-              See <br /> more
-            </Link>
+          <div className="bgimg">
+            <div className="rounded-circle">
+              <Link className="See-More" to="/">
+                See <br /> more
+              </Link>
+            </div>
           </div>
           <h1 className="Project1">
-            MY
+            DLLC
             <span className="Projects-line1"></span>
-            PORTFOLIO
+            Application
             <span className="Projects-line2"></span>
           </h1>
           <p className="projects-desc">
-            MY PERSONAL WEB <br /> PORTFOLIO
+            Church Management<br /> Application
           </p>
-          <div className="rounded-circle">
-            <Link className="See-More" to="/">
-              See <br /> more
-            </Link>
+          <div className="bgimg">
+            <div className="rounded-circle">
+              <Link className="See-More" to="/">
+                See <br /> more
+              </Link>
+            </div>
           </div>
           <div className="flex-project" id="About-3">
             <p className="sn2">03/</p>
             <p className="recent">ABOUT ME</p>
           </div>
-          <div className="hobbies">
-            <h1>TENNIS,</h1> <br />
-            <h1>CHESS,</h1> <br />
-            <br />
-            <h1>MUSIC,</h1> <br />
-            <br />
-            <br />
-            <h1>FOOTBALL.</h1>
+          <div className="bgimg2">
+            <div className="hobbies">
+              <h1>TENNIS,</h1> <br />
+              <h1>CHESS,</h1> <br />
+              <br />
+              <h1>MUSIC,</h1> <br />
+              <br />
+              <br />
+              <h1>FOOTBALL.</h1>
+            </div>
           </div>
           <div className="hobbies-desc">
             <p>
